@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://darae-00.github.io/sitemap.xml
