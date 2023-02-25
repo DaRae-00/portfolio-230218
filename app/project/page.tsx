@@ -142,7 +142,7 @@ export default function ProjectPage() {
       </div>
       <div></div>
       <div
-        className="dark:prose-invert text-neutral-800 dark:text-neutral-200"
+        className="dark:prose-invert text-neutral-800 dark:text-neutral-200 h-[300px]"
         style={{ marginTop: "215px" }}
       >
         {target === 0 && (
