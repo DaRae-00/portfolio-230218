@@ -7,7 +7,7 @@ import mac from "../../asset/image/mac.png";
 import macB from "../../asset/image/mac_bottom.png";
 import right from "../../asset/image/right.png";
 import bot1 from "../../asset/image/bots/bot-8.png";
-import { bots, webs, dashboard } from "../../projects/images";
+import { bots, webs, dashboard, pms } from "../../projects/images";
 
 export const metadata: Metadata = {
   title: "Project",
@@ -35,6 +35,9 @@ export default function ProjectPage() {
         break;
       case 2:
         targetImages = dashboard;
+        break;
+      case 3:
+        targetImages = pms;
         break;
       default:
         break;
@@ -86,6 +89,15 @@ export default function ProjectPage() {
           onClick={() => onSelectTarget(2)}
         >
           Dashboard
+        </div>
+        <div
+            className={clsx(
+                "border border-neutral-200 p-2 rounded m-2 min-w-[80px] max-h-[40px] text-center hover:bg-zinc-500 cursor-pointer active:text-lg active:text-bold",
+                { "bg-zinc-500": target === 3 }
+            )}
+            onClick={() => onSelectTarget(3)}
+        >
+          PM
         </div>
       </div>
       <div className="flex justify-start mt-8">
@@ -197,6 +209,19 @@ export default function ProjectPage() {
             <br />
             svg를 활용하여 개발.
           </>
+        )}
+        {target === 3 && (
+            <>
+              <h3 className="font-bold text-xl font-serif">
+                프로젝트 일정 관리 및 front end 개발자 관리
+              </h3>
+              <br />
+              프로젝트의 전체 일정 관리 및 리소스 관리.
+              <br />
+              SDS문서 작성, figma UX
+              <br />
+              front end 개발자 교육 및 일정 관리.
+            </>
         )}
       </div>
     </section>

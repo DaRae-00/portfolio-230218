@@ -24,6 +24,14 @@ import db1 from "../asset/image/dashboard/db-1.png"
 import db2 from "../asset/image/dashboard/db-2.png"
 import db3 from "../asset/image/dashboard/db-3.png"
 
+import pm1 from "../asset/image/pm/pm-1.png"
+import pm2 from "../asset/image/pm/pm-2.png"
+import pm3 from "../asset/image/pm/pm-3.png"
+import pm4 from "../asset/image/pm/pm-4.png"
+import pm5 from "../asset/image/pm/pm-5.png"
+import pm6 from "../asset/image/pm/pm-6.png"
+
+
 export const bots: Array<{id: number, img: StaticImageData}> = [
     {
         id: 0,
@@ -124,4 +132,33 @@ export const dashboard: Array<{id: number, img: StaticImageData}> = [
     //     id: 2,
     //     img: db3
     // },
+]
+
+
+
+export const pms: Array<{id: number, img: StaticImageData}> = [
+    {
+        id: 0,
+        img: pm1
+    },
+    {
+        id: 1,
+        img: pm2
+    },
+    {
+        id: 2,
+        img: pm3
+    },
+    {
+        id: 3,
+        img: pm4
+    },
+    {
+        id: 4,
+        img: pm5
+    },
+    {
+        id: 5,
+        img: pm6
+    },
 ]
